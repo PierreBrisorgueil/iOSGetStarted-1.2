@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CC907151AEAD08600D17090 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC907141AEAD08600D17090 /* AppDelegate.swift */; };
+		2CC907171AEAD08600D17090 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC907161AEAD08600D17090 /* ViewController.swift */; };
+		2CC9071A1AEAD08600D17090 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CC907181AEAD08600D17090 /* Main.storyboard */; };
+		2CC9071C1AEAD08600D17090 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CC9071B1AEAD08600D17090 /* Images.xcassets */; };
+		2CC9071F1AEAD08600D17090 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CC9071D1AEAD08600D17090 /* LaunchScreen.xib */; };
+		2CC9072B1AEAD08600D17090 /* StepOneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC9072A1AEAD08600D17090 /* StepOneTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2CC907251AEAD08600D17090 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CC907071AEAD08600D17090 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CC9070E1AEAD08600D17090;
+			remoteInfo = StepOne;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2CC9070F1AEAD08600D17090 /* StepOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CC907131AEAD08600D17090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CC907141AEAD08600D17090 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2CC907161AEAD08600D17090 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2CC907191AEAD08600D17090 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2CC9071B1AEAD08600D17090 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2CC9071E1AEAD08600D17090 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2CC907241AEAD08600D17090 /* StepOneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StepOneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CC907291AEAD08600D17090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CC9072A1AEAD08600D17090 /* StepOneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepOneTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2CC9070C1AEAD08600D17090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CC907211AEAD08600D17090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CC907061AEAD08600D17090 = {
+			isa = PBXGroup;
+			children = (
+				2CC907111AEAD08600D17090 /* StepOne */,
+				2CC907271AEAD08600D17090 /* StepOneTests */,
+				2CC907101AEAD08600D17090 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2CC907101AEAD08600D17090 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2CC9070F1AEAD08600D17090 /* StepOne.app */,
+				2CC907241AEAD08600D17090 /* StepOneTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2CC907111AEAD08600D17090 /* StepOne */ = {
+			isa = PBXGroup;
+			children = (
+				2CC907141AEAD08600D17090 /* AppDelegate.swift */,
+				2CC907161AEAD08600D17090 /* ViewController.swift */,
+				2CC907181AEAD08600D17090 /* Main.storyboard */,
+				2CC9071B1AEAD08600D17090 /* Images.xcassets */,
+				2CC9071D1AEAD08600D17090 /* LaunchScreen.xib */,
+				2CC907121AEAD08600D17090 /* Supporting Files */,
+			);
+			path = StepOne;
+			sourceTree = "<group>";
+		};
+		2CC907121AEAD08600D17090 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2CC907131AEAD08600D17090 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2CC907271AEAD08600D17090 /* StepOneTests */ = {
+			isa = PBXGroup;
+			children = (
+				2CC9072A1AEAD08600D17090 /* StepOneTests.swift */,
+				2CC907281AEAD08600D17090 /* Supporting Files */,
+			);
+			path = StepOneTests;
+			sourceTree = "<group>";
+		};
+		2CC907281AEAD08600D17090 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2CC907291AEAD08600D17090 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2CC9070E1AEAD08600D17090 /* StepOne */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CC9072E1AEAD08600D17090 /* Build configuration list for PBXNativeTarget "StepOne" */;
+			buildPhases = (
+				2CC9070B1AEAD08600D17090 /* Sources */,
+				2CC9070C1AEAD08600D17090 /* Frameworks */,
+				2CC9070D1AEAD08600D17090 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StepOne;
+			productName = StepOne;
+			productReference = 2CC9070F1AEAD08600D17090 /* StepOne.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2CC907231AEAD08600D17090 /* StepOneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CC907311AEAD08600D17090 /* Build configuration list for PBXNativeTarget "StepOneTests" */;
+			buildPhases = (
+				2CC907201AEAD08600D17090 /* Sources */,
+				2CC907211AEAD08600D17090 /* Frameworks */,
+				2CC907221AEAD08600D17090 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2CC907261AEAD08600D17090 /* PBXTargetDependency */,
+			);
+			name = StepOneTests;
+			productName = StepOneTests;
+			productReference = 2CC907241AEAD08600D17090 /* StepOneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2CC907071AEAD08600D17090 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = RYPE;
+				TargetAttributes = {
+					2CC9070E1AEAD08600D17090 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					2CC907231AEAD08600D17090 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 2CC9070E1AEAD08600D17090;
+					};
+				};
+			};
+			buildConfigurationList = 2CC9070A1AEAD08600D17090 /* Build configuration list for PBXProject "StepOne" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2CC907061AEAD08600D17090;
+			productRefGroup = 2CC907101AEAD08600D17090 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2CC9070E1AEAD08600D17090 /* StepOne */,
+				2CC907231AEAD08600D17090 /* StepOneTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2CC9070D1AEAD08600D17090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CC9071A1AEAD08600D17090 /* Main.storyboard in Resources */,
+				2CC9071F1AEAD08600D17090 /* LaunchScreen.xib in Resources */,
+				2CC9071C1AEAD08600D17090 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CC907221AEAD08600D17090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2CC9070B1AEAD08600D17090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CC907171AEAD08600D17090 /* ViewController.swift in Sources */,
+				2CC907151AEAD08600D17090 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CC907201AEAD08600D17090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CC9072B1AEAD08600D17090 /* StepOneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2CC907261AEAD08600D17090 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CC9070E1AEAD08600D17090 /* StepOne */;
+			targetProxy = 2CC907251AEAD08600D17090 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2CC907181AEAD08600D17090 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CC907191AEAD08600D17090 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2CC9071D1AEAD08600D17090 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CC9071E1AEAD08600D17090 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2CC9072C1AEAD08600D17090 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2CC9072D1AEAD08600D17090 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2CC9072F1AEAD08600D17090 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = StepOne/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2CC907301AEAD08600D17090 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = StepOne/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2CC907321AEAD08600D17090 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = StepOneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StepOne.app/StepOne";
+			};
+			name = Debug;
+		};
+		2CC907331AEAD08600D17090 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = StepOneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StepOne.app/StepOne";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2CC9070A1AEAD08600D17090 /* Build configuration list for PBXProject "StepOne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CC9072C1AEAD08600D17090 /* Debug */,
+				2CC9072D1AEAD08600D17090 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CC9072E1AEAD08600D17090 /* Build configuration list for PBXNativeTarget "StepOne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CC9072F1AEAD08600D17090 /* Debug */,
+				2CC907301AEAD08600D17090 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2CC907311AEAD08600D17090 /* Build configuration list for PBXNativeTarget "StepOneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CC907321AEAD08600D17090 /* Debug */,
+				2CC907331AEAD08600D17090 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2CC907071AEAD08600D17090 /* Project object */;
+}
