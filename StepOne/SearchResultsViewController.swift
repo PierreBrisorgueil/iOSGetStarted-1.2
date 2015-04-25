@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 WeAreOpenSource.me rights reserved.
 //
 
-// tuto : http://jamesonquave.com/blog/developing-ios-8-apps-using-swift-interaction-with-multiple-views/
+// tuto : http://jamesonquave.com/blog/developing-ios-8-apps-using-swift-animations-audio-and-custom-table-view-cells/
 
 import UIKit
 
@@ -33,7 +33,7 @@ class SearchResultsViewController: UIViewController, UITableViewDataSource, UITa
         super.viewDidLoad()
         api = APIController(delegate: self)
         UIApplication.sharedApplication().networkActivityIndicatorVisible = true
-        api.searchItunesFor("beattles")
+        api.searchItunesFor("Beatles")
     }
     
     override func didReceiveMemoryWarning() {
@@ -90,6 +90,13 @@ class SearchResultsViewController: UIViewController, UITableViewDataSource, UITa
             })
         }
         return cell
+    }
+
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        cell.layer.transform = CATransform3DMakeScale(0.1,0.1,1)
+        UIView.animateWithDuration(0.25, animations: {
+            cell.layer.transform = CATransform3DMakeScale(1,1,1)
+        })
     }
 
     // Segue

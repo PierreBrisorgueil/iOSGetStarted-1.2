@@ -1,10 +1,12 @@
 //
-//  Album.swift
+//  ViewController.swift
 //  StepOne
 //
-//  Created by RYPE on 25/04/2015.
-//  Copyright (c) 2015 RYPE. All rights reserved.
+//  Created by WeAreOpenSource.me on 24/04/2015.
+//  Copyright (c) 2015 WeAreOpenSource.me rights reserved.
 //
+
+// tuto : http://jamesonquave.com/blog/developing-ios-8-apps-using-swift-animations-audio-and-custom-table-view-cells/
 
 import Foundation
 
@@ -15,16 +17,21 @@ struct Album {
     let largeImageURL: String
     let itemURL: String
     let artistURL: String
+    let collectionId: Int
     
-    init(name: String, price: String, thumbnailImageURL: String, largeImageURL: String, itemURL: String, artistURL: String) {
+    init(name: String, price: String, thumbnailImageURL: String, largeImageURL: String, itemURL: String, artistURL: String, collectionId: Int) {
         self.title = name
         self.price = price
         self.thumbnailImageURL = thumbnailImageURL
         self.largeImageURL = largeImageURL
         self.itemURL = itemURL
         self.artistURL = artistURL
+        self.collectionId = collectionId
     }
     
+    /*************************************************/
+    // Functions
+    /*************************************************/
     static func albumsWithJSON(results: NSArray) -> [Album] {
         // Create an empty array of Albums to append to from this list
         var albums = [Album]()
@@ -51,6 +58,9 @@ struct Album {
                         if priceFloat != nil {
                             price = "$\(nf.stringFromNumber(priceFloat!)!)"
                         }
+                        else {
+                            price = ""
+                        }
                     }
                 }
                 
@@ -63,8 +73,16 @@ struct Album {
                     itemURL = result["trackViewUrl"] as? String
                 }
                 
-                var newAlbum = Album(name: name!, price: price!, thumbnailImageURL: thumbnailURL, largeImageURL: imageURL, itemURL: itemURL!, artistURL: artistURL)
-                albums.append(newAlbum)
+                if let collectionId = result["collectionId"] as? Int {
+                    var newAlbum = Album(name: name!,
+                        price: price!,
+                        thumbnailImageURL: thumbnailURL,
+                        largeImageURL: imageURL,
+                        itemURL: itemURL!,
+                        artistURL: artistURL,
+                        collectionId: collectionId)
+                    albums.append(newAlbum)
+                }
             }
         }
         return albums

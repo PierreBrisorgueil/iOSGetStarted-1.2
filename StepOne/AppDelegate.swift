@@ -1,10 +1,13 @@
 //
-//  AppDelegate.swift
+//  ViewController.swift
 //  StepOne
 //
-//  Created by RYPE on 24/04/2015.
-//  Copyright (c) 2015 RYPE. All rights reserved.
+//  Created by WeAreOpenSource.me on 24/04/2015.
+//  Copyright (c) 2015 WeAreOpenSource.me rights reserved.
 //
+
+// tuto : http://jamesonquave.com/blog/developing-ios-8-apps-using-swift-animations-audio-and-custom-table-view-cells/
+
 
 import UIKit
 
