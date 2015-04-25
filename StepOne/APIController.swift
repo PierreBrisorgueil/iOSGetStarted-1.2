@@ -9,6 +9,13 @@
 import Foundation
 
 /**************************************************************************************************/
+// Protocol
+/**************************************************************************************************/
+protocol APIControllerProtocol {
+    func didReceiveAPIResults(results: NSArray)
+}
+
+/**************************************************************************************************/
 // Class
 /**************************************************************************************************/
 class APIController {
@@ -19,7 +26,13 @@ class APIController {
     
     // Var
     /*************************/
-    var delegate: APIControllerProtocol?
+    var delegate: APIControllerProtocol
+    
+    // init
+    /*************************/
+    init(delegate: APIControllerProtocol) {
+        self.delegate = delegate
+    }
     
     /*************************************************/
     // Functions
@@ -31,7 +44,7 @@ class APIController {
         
         // Now escape anything else that isn't URL-friendly
         if let escapedSearchTerm = itunesSearchTerm.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding) {
-            let urlPath = "http://itunes.apple.com/search?term=\(escapedSearchTerm)&media=software"
+            let urlPath = "https://itunes.apple.com/search?term=\(escapedSearchTerm)&amp;media=music&amp;entity=album"
             let url = NSURL(string: urlPath)
             let session = NSURLSession.sharedSession()
             let task = session.dataTaskWithURL(url!, completionHandler: {data, response, error -> Void in
@@ -47,7 +60,7 @@ class APIController {
                         println("JSON Error \(err!.localizedDescription)")
                     }
                     if let results: NSArray = jsonResult["results"] as? NSArray {
-                        self.delegate?.didReceiveAPIResults(results)
+                        self.delegate.didReceiveAPIResults(results)
                     }
                 }
             })
@@ -60,9 +73,3 @@ class APIController {
     
 }
 
-/**************************************************************************************************/
-// Protocol
-/**************************************************************************************************/
-protocol APIControllerProtocol {
-    func didReceiveAPIResults(results: NSArray)
-}
