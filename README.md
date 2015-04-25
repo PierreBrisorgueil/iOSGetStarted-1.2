@@ -8,7 +8,7 @@ IOS application sample, just to learn swift, by  [this good article](http://jame
 
 #### Tuto
 
-* [Step 1](hhttp://jamesonquave.com/blog/developing-ios-apps-using-swift-tutorial/) = [Realease v0.1](https://github.com/weareopensource/Sample-Swift_GetStarted/releases/tag/v0.1)
+* [Step 1](http://jamesonquave.com/blog/developing-ios-apps-using-swift-tutorial/) = [Realease v0.1](https://github.com/weareopensource/Sample-Swift_GetStarted/releases/tag/v0.1)
 * [Step 2](http://jamesonquave.com/blog/developing-ios-apps-using-swift-tutorial-part-2/) = [Realease v0.2](https://github.com/weareopensource/Sample-Swift_GetStarted/releases/tag/v0.2)
 * [Step 3](http://jamesonquave.com/blog/developing-ios-apps-using-swift-part-3-best-practices/) = [Realease v0.3](https://github.com/weareopensource/Sample-Swift_GetStarted/releases/tag/v0.3)
 * [Step 4](http://jamesonquave.com/blog/developing-ios-apps-using-swift-part-4-adding-interactions/) = [Realease v0.4](https://github.com/weareopensource/Sample-Swift_GetStarted/releases/tag/v0.4)
