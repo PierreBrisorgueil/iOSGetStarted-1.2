@@ -14,6 +14,7 @@
 		2CC9071C1AEAD08600D17090 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CC9071B1AEAD08600D17090 /* Images.xcassets */; };
 		2CC9071F1AEAD08600D17090 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CC9071D1AEAD08600D17090 /* LaunchScreen.xib */; };
 		2CC9072B1AEAD08600D17090 /* StepOneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC9072A1AEAD08600D17090 /* StepOneTests.swift */; };
+		2CCBA0091AEBAD3900F8149C /* Blank52.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CCBA0081AEBAD3900F8149C /* Blank52.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		2CC907241AEAD08600D17090 /* StepOneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StepOneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CC907291AEAD08600D17090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CC9072A1AEAD08600D17090 /* StepOneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepOneTests.swift; sourceTree = "<group>"; };
+		2CCBA0081AEBAD3900F8149C /* Blank52.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blank52.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		2CC907111AEAD08600D17090 /* StepOne */ = {
 			isa = PBXGroup;
 			children = (
+				2CCBA0081AEBAD3900F8149C /* Blank52.png */,
 				2CC907141AEAD08600D17090 /* AppDelegate.swift */,
 				2C8755B51AEB8AEF007F1B81 /* APIController.swift */,
 				2CC907161AEAD08600D17090 /* SearchResultsViewController.swift */,
@@ -196,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CC9071A1AEAD08600D17090 /* Main.storyboard in Resources */,
+				2CCBA0091AEBAD3900F8149C /* Blank52.png in Resources */,
 				2CC9071F1AEAD08600D17090 /* LaunchScreen.xib in Resources */,
 				2CC9071C1AEAD08600D17090 /* Images.xcassets in Resources */,
 			);
