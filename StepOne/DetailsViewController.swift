@@ -22,6 +22,7 @@ class DetailsViewController: UIViewController, APIControllerProtocol {
     @IBOutlet weak var albumCover: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var tracksTableView: UITableView!
+    @IBOutlet var myView: UIView!
     
     // Var
     /*************************/
@@ -40,6 +41,7 @@ class DetailsViewController: UIViewController, APIControllerProtocol {
     /*************************/
     override func viewDidLoad() {
         super.viewDidLoad()
+        // get data
         titleLabel.text = self.album?.title
         albumCover.image = UIImage(data: NSData(contentsOfURL: NSURL(string: self.album!.largeImageURL)!)!)
         // Load in tracks

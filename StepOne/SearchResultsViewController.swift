@@ -19,6 +19,7 @@ class SearchResultsViewController: UIViewController, UITableViewDataSource, UITa
     // Boulet
     /*************************/
     @IBOutlet weak var appsTableView: UITableView!
+    @IBOutlet weak var mytable: UITableView!
     
     // Var
     /*************************/
@@ -31,6 +32,11 @@ class SearchResultsViewController: UIViewController, UITableViewDataSource, UITa
     /*************************/
     override func viewDidLoad() {
         super.viewDidLoad()
+        // custom
+        self.mytable.rowHeight = 70
+        self.mytable.backgroundView = UIImageView(image: UIImage(named: "home.jpg"))
+        
+        // get data
         api = APIController(delegate: self)
         UIApplication.sharedApplication().networkActivityIndicatorVisible = true
         api.searchItunesFor("Beatles")
@@ -89,9 +95,22 @@ class SearchResultsViewController: UIViewController, UITableViewDataSource, UITa
                 }
             })
         }
+        
+        // custom
+        cell.detailTextLabel?.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0)
+        cell.detailTextLabel?.textColor = UIColor.whiteColor().colorWithAlphaComponent(0.7)
+        cell.textLabel?.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0)
+        cell.textLabel?.textColor = UIColor.whiteColor()
+        cell.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.50)
+
+        // custom selected cell
+        let customColorView = UIView()
+        customColorView.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.1)
+        cell.selectedBackgroundView = customColorView
+        
         return cell
     }
-
+    
     func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         cell.layer.transform = CATransform3DMakeScale(0.1,0.1,1)
         UIView.animateWithDuration(0.25, animations: {
