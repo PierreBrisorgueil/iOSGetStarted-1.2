@@ -15,6 +15,11 @@ IOS application sample, just to learn swift, by  [this good article](http://jame
 * [Step 5 : Async image loading and caching](http://jamesonquave.com/blog/developing-ios-apps-using-swift-part-5-async-image-loading-and-caching/) = [Realease v0.5](https://github.com/weareopensource/Sample-Swift_GetStarted/releases/tag/v0.5)
 * [Step 6 : Interaction with multiple views](http://jamesonquave.com/blog/developing-ios-8-apps-using-swift-interaction-with-multiple-views/) = [Realease v0.6](https://github.com/weareopensource/Sample-Swift_GetStarted/releases/tag/v0.6)
 * [Step 7 : Animations, Audio, and Custom Table View Cells](http://jamesonquave.com/blog/developing-ios-8-apps-using-swift-animations-audio-and-custom-table-view-cells/) = [Realease v0.7](https://github.com/weareopensource/Sample-Swift_GetStarted/releases/tag/v0.7)
+* 
+
+Bonus by [weareopensource.me](http://weareopensource.me)
+
+* [Step 8 : Custom First TableView](https://github.com/weareopensource/Sample-Swift_GetStarted/releases/tag/v0.8)
 
 #### Questions ? 
 
