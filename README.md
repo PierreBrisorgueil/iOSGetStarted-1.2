@@ -18,7 +18,7 @@ IOS application sample, just to learn swift, by  [this good article](http://jame
 
 Bonus by [weareopensource.me](http://weareopensource.me)
 
-* [Realease v0.8 : Custom First TableView](https://github.com/weareopensource/Sample-Swift_GetStarted/releases/tag/v0.8)
+* [Release v0.8 : Custom First TableView](https://github.com/weareopensource/Sample-Swift_GetStarted/releases/tag/v0.8)
 
 #### Questions ? 
 
