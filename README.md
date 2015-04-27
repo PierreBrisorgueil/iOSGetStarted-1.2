@@ -19,7 +19,7 @@ IOS application sample, just to learn swift, by  [this good article](http://jame
 Bonus by [weareopensource.me](http://weareopensource.me)
 
 * [Release v0.8 : Custom First TableView](https://github.com/weareopensource/Sample-Swift_GetStarted/releases/tag/v0.8)
-* [Release v0.9 : Custom Second TableView](https://github.com/weareopensource/Sample-Swift_GetStarted/releases/tag/v0.9)
+* [Release v0.9 : Custom Second TableView](https://github.com/weareopensource/Sample-Swift_GetStarted/releases/tag/v0.9.1)
 
 #### Questions ? 
 
