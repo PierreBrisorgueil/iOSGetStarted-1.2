@@ -54,12 +54,6 @@ class DetailsViewController: UIViewController, APIControllerProtocol {
             action: nil
         );
         self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
-        // background image
-        UIGraphicsBeginImageContext(self.view.frame.size)
-        UIImage(named: "home.jpg")?.drawInRect(self.view.bounds)
-        var image: UIImage = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        self.view.backgroundColor = UIColor(patternImage: image)
         // ---------------------
         
         // get data
