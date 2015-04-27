@@ -27,6 +27,7 @@ class SearchResultsViewController: UIViewController, UITableViewDataSource, UITa
     var imageCache = [String:UIImage]()
     var api : APIController!
     let kCellIdentifier: String = "SearchResultCell"
+    var refreshControl:UIRefreshControl!
 
     // Base
     /*************************/
@@ -42,6 +43,12 @@ class SearchResultsViewController: UIViewController, UITableViewDataSource, UITa
         api = APIController(delegate: self)
         UIApplication.sharedApplication().networkActivityIndicatorVisible = true
         api.searchItunesFor("Beatles")
+        
+        //Pull to refresh
+        self.refreshControl = UIRefreshControl()
+        self.refreshControl.tintColor = UIColor.whiteColor()
+        self.refreshControl.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
+        self.mytable.addSubview(refreshControl)
     }
     
     override func didReceiveMemoryWarning() {
@@ -134,10 +141,19 @@ class SearchResultsViewController: UIViewController, UITableViewDataSource, UITa
     /*************************************************/
     // Functions
     /*************************************************/
+    func refresh(sender:AnyObject)
+    {
+        // get data
+        api = APIController(delegate: self)
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = true
+        api.searchItunesFor("Beatles")
+    }
+    
     func didReceiveAPIResults(results: NSArray) {
         dispatch_async(dispatch_get_main_queue(), {
             self.albums = Album.albumsWithJSON(results)
             self.appsTableView!.reloadData()
+            self.refreshControl.endRefreshing()
             UIApplication.sharedApplication().networkActivityIndicatorVisible = false
         })
     }
