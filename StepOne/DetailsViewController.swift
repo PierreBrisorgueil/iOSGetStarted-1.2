@@ -23,6 +23,9 @@ class DetailsViewController: UIViewController, APIControllerProtocol {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var tracksTableView: UITableView!
     @IBOutlet var myView: UIView!
+    @IBOutlet weak var myTable: UITableView!
+    @IBOutlet weak var artistLabel: UILabel!
+    @IBOutlet weak var genreLabel: UILabel!
     
     // Var
     /*************************/
@@ -41,8 +44,29 @@ class DetailsViewController: UIViewController, APIControllerProtocol {
     /*************************/
     override func viewDidLoad() {
         super.viewDidLoad()
+        // custom
+        // ---------------------
+        // back button text
+        let backButton = UIBarButtonItem(
+            title: "",
+            style: UIBarButtonItemStyle.Plain,
+            target: nil,
+            action: nil
+        );
+        self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
+        // background image
+        UIGraphicsBeginImageContext(self.view.frame.size)
+        UIImage(named: "home.jpg")?.drawInRect(self.view.bounds)
+        var image: UIImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        self.view.backgroundColor = UIColor(patternImage: image)
+        // ---------------------
+        
         // get data
         titleLabel.text = self.album?.title
+        artistLabel.text = self.album?.artistName
+        genreLabel.text = self.album?.primaryGenreName
+
         albumCover.image = UIImage(data: NSData(contentsOfURL: NSURL(string: self.album!.largeImageURL)!)!)
         // Load in tracks
         if self.album != nil {
@@ -61,6 +85,20 @@ class DetailsViewController: UIViewController, APIControllerProtocol {
         let track = tracks[indexPath.row]
         cell.titleLabel.text = track.title
         cell.playIcon.text = "▶︎"
+        
+        // custom
+        // ---------------------
+        cell.titleLabel?.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0)
+        cell.titleLabel?.textColor = UIColor.whiteColor().colorWithAlphaComponent(0.7)
+        cell.playIcon?.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0)
+        cell.playIcon?.textColor = UIColor.whiteColor()
+        cell.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.25)
+        
+        let customColorView = UIView()
+        customColorView.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.1)
+        cell.selectedBackgroundView = customColorView
+        // ---------------------
+
         return cell
     }
     

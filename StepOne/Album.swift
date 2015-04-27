@@ -18,8 +18,11 @@ struct Album {
     let itemURL: String
     let artistURL: String
     let collectionId: Int
+    let primaryGenreName: String
+    let artistName: String
+    let country: String
     
-    init(name: String, price: String, thumbnailImageURL: String, largeImageURL: String, itemURL: String, artistURL: String, collectionId: Int) {
+    init(name: String, price: String, thumbnailImageURL: String, largeImageURL: String, itemURL: String, artistURL: String, collectionId: Int, primaryGenreName: String, artistName: String, country: String) {
         self.title = name
         self.price = price
         self.thumbnailImageURL = thumbnailImageURL
@@ -27,6 +30,9 @@ struct Album {
         self.itemURL = itemURL
         self.artistURL = artistURL
         self.collectionId = collectionId
+        self.primaryGenreName = primaryGenreName
+        self.artistName = artistName
+        self.country = country
     }
     
     /*************************************************/
@@ -64,7 +70,7 @@ struct Album {
                     }
                 }
                 
-                let thumbnailURL = result["artworkUrl60"] as? String ?? ""
+                //let thumbnailURL = result["artworkUrl60"] as? String ?? ""
                 let imageURL = result["artworkUrl100"] as? String ?? ""
                 let artistURL = result["artistViewUrl"] as? String ?? ""
                 
@@ -73,14 +79,27 @@ struct Album {
                     itemURL = result["trackViewUrl"] as? String
                 }
                 
+                // more information
+                let primaryGenreName = result["primaryGenreName"] as? String ?? ""
+                let artistName = result["artistName"] as? String ?? ""
+                let country = result["country"] as? String ?? ""
+
+                
+                // tricks for get a good image quality
+                let BigimageURL = imageURL.stringByReplacingOccurrencesOfString(".100x100-", withString: ".300x300-", options: nil, range: nil)
+                
+                // thumbnailURL bad quality .. 60x60, su we use imageURL
                 if let collectionId = result["collectionId"] as? Int {
                     var newAlbum = Album(name: name!,
                         price: price!,
-                        thumbnailImageURL: thumbnailURL,
-                        largeImageURL: imageURL,
+                        thumbnailImageURL: imageURL,
+                        largeImageURL: BigimageURL,
                         itemURL: itemURL!,
                         artistURL: artistURL,
-                        collectionId: collectionId)
+                        collectionId: collectionId,
+                        primaryGenreName: primaryGenreName,
+                        artistName: artistName,
+                        country: country)
                     albums.append(newAlbum)
                 }
             }
