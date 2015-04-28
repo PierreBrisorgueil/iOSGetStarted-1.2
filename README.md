@@ -4,9 +4,9 @@
 
 #### Introduction  
 
-IOS application sample, just to learn swift, by  [this good article](http://jamesonquave.com/blog/developing-ios-apps-using-swift-tutorial/). 
+IOS application sample, just to learn swift, by  [this good article](http://jamesonquave.com/blog/developing-ios-apps-using-swift-tutorial/). (and a little more ;))
 
-## Master (iphone - ipad)
+# [Master](https://github.com/weareopensource/Sample-Swift_GetStarted) (iphone - ipad)
 
 <img src="https://raw.githubusercontent.com/weareopensource/Sample-Swift_GetStarted/master/Screenshots/iOS%20Simulator%20Screen%20Shot%2028%20avr.%202015%2019.41.19.png" width="300px"/>
 <img src="https://raw.githubusercontent.com/weareopensource/Sample-Swift_GetStarted/master/Screenshots/iOS%20Simulator%20Screen%20Shot%2028%20avr.%202015%2019.41.51.png" width="300px"/>
