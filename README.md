@@ -6,7 +6,13 @@
 
 IOS application sample, just to learn swift, by  [this good article](http://jamesonquave.com/blog/developing-ios-apps-using-swift-tutorial/). 
 
-#### Tuto
+## Master (iphone - ipad)
+
+<img src="https://raw.githubusercontent.com/weareopensource/Sample-Swift_GetStarted/master/Screenshots/iOS%20Simulator%20Screen%20Shot%2028%20avr.%202015%2019.41.19.png" width="300px"/>
+<img src="https://raw.githubusercontent.com/weareopensource/Sample-Swift_GetStarted/master/Screenshots/iOS%20Simulator%20Screen%20Shot%2028%20avr.%202015%2019.41.51.png" width="300px"/>
+<img src="https://github.com/weareopensource/Sample-Swift_GetStarted/blob/master/Screenshots/iOS%20Simulator%20Screen%20Shot%2028%20avr.%202015%2019.42.10.png" height="300px"/>
+
+#### Tuto 
 
 * [Step 1](http://jamesonquave.com/blog/developing-ios-apps-using-swift-tutorial/) = [Release v0.1](https://github.com/weareopensource/Sample-Swift_GetStarted/releases/tag/v0.1)
 * [Step 2](http://jamesonquave.com/blog/developing-ios-apps-using-swift-tutorial-part-2/) = [Release v0.2](https://github.com/weareopensource/Sample-Swift_GetStarted/releases/tag/v0.2)
