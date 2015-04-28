@@ -86,7 +86,7 @@ class DetailsViewController: UIViewController, APIControllerProtocol {
         cell.titleLabel?.textColor = UIColor.whiteColor().colorWithAlphaComponent(0.7)
         cell.playIcon?.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0)
         cell.playIcon?.textColor = UIColor.whiteColor()
-        cell.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.25)
+        cell.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.4)
         
         let customColorView = UIView()
         customColorView.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.1)

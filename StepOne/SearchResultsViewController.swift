@@ -10,7 +10,7 @@
 
 import UIKit
 
-class SearchResultsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, APIControllerProtocol  {
+class SearchResultsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, APIControllerProtocol, ENSideMenuDelegate {
 
     /*************************************************/
     // Main
@@ -111,7 +111,7 @@ class SearchResultsViewController: UIViewController, UITableViewDataSource, UITa
         cell.detailTextLabel?.textColor = UIColor.whiteColor().colorWithAlphaComponent(0.7)
         cell.textLabel?.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0)
         cell.textLabel?.textColor = UIColor.whiteColor()
-        cell.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.25)
+        cell.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.5)
 
         let customColorView = UIView()
         customColorView.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.1)
@@ -141,6 +141,15 @@ class SearchResultsViewController: UIViewController, UITableViewDataSource, UITa
     /*************************************************/
     // Functions
     /*************************************************/
+    
+    // Segue
+    /*************************/
+    @IBAction func toogleSideMenu(sender: AnyObject) {
+        toggleSideMenuView()
+    }
+    
+    // Other
+    /*************************/
     func refresh(sender:AnyObject)
     {
         // get data
@@ -148,7 +157,7 @@ class SearchResultsViewController: UIViewController, UITableViewDataSource, UITa
         UIApplication.sharedApplication().networkActivityIndicatorVisible = true
         api.searchItunesFor("Beatles")
     }
-    
+
     func didReceiveAPIResults(results: NSArray) {
         dispatch_async(dispatch_get_main_queue(), {
             self.albums = Album.albumsWithJSON(results)
