@@ -15,6 +15,7 @@ class MyMenuTableViewController: UITableViewController {
         
         // Customize apperance of table view
         tableView.contentInset = UIEdgeInsetsMake(64.0, 0, 0, 0) //
+        tableView.contentInset = UIEdgeInsetsMake(64.0, 0, 0, 0) //
         tableView.separatorStyle = .None
         tableView.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.7)
         tableView.scrollsToTop = false

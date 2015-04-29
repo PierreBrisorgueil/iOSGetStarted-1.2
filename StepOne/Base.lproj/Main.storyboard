@@ -74,7 +74,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Search" id="FdQ-zg-kvb">
                         <barButtonItem key="leftBarButtonItem" systemItem="search" id="fw0-Zk-2D9">
-                            <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="toogleSideMenu:" destination="BYZ-38-t0r" id="mTq-e7-2QO"/>
                             </connections>
@@ -141,7 +141,7 @@
         <!--Infos-->
         <scene sceneID="UKr-44-gz6">
             <objects>
-                <viewController id="ueX-TJ-urU" customClass="DetailsViewController" customModule="StepOne" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StoryboardID_InfosController" id="ueX-TJ-urU" customClass="DetailsViewController" customModule="StepOne" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XOG-ad-kYv"/>
                         <viewControllerLayoutGuide type="bottom" id="axv-Lc-av4"/>
@@ -317,7 +317,7 @@
         <!--My Navigation Controller-->
         <scene sceneID="29y-en-9tB">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EHi-pr-nrX" customClass="MyNavigationController" customModule="StepOne" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="StoryboardID_SearchNavController" automaticallyAdjustsScrollViewInsets="NO" id="EHi-pr-nrX" customClass="MyNavigationController" customModule="StepOne" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
@@ -338,7 +338,7 @@
         <!--Navigation Controller-->
         <scene sceneID="RFh-MP-vBi">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bv7-YS-5o3" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="StoryboardID_WaosNavController" automaticallyAdjustsScrollViewInsets="NO" id="Bv7-YS-5o3" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
