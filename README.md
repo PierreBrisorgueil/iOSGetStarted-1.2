@@ -28,7 +28,20 @@ Bonus by [weareopensource.me](http://weareopensource.me)
 * [Release v0.9 : Custom Second TableView](https://github.com/weareopensource/Sample-Swift_GetStarted/releases/tag/v0.9.1)
 * [Release v1.0 : Add Pull To refresh](https://github.com/weareopensource/Sample-Swift_GetStarted/releases/tag/v1.0)
 
-#### Questions ? 
+
+# [Master -> SideBar Example](https://github.com/weareopensource/Sample-Swift_GetStarted/tree/SideBar) (iphone - ipad)
+
+<img src="https://raw.githubusercontent.com/weareopensource/Sample-Swift_GetStarted/SideBar/Screenshots/iOS%20Simulator%20Screen%20Shot%2029%20avr.%202015%2009.03.16.png" width="250px"/>
+<img src="https://raw.githubusercontent.com/weareopensource/Sample-Swift_GetStarted/SideBar/Screenshots/iOS%20Simulator%20Screen%20Shot%2029%20avr.%202015%2009.03.20.png" width="250px"/>
+<img src="https://raw.githubusercontent.com/weareopensource/Sample-Swift_GetStarted/SideBar/Screenshots/iOS%20Simulator%20Screen%20Shot%2029%20avr.%202015%2009.03.28.png" width="250px"/>
+<img src="https://raw.githubusercontent.com/weareopensource/Sample-Swift_GetStarted/SideBar/Screenshots/iOS%20Simulator%20Screen%20Shot%2029%20avr.%202015%2009.03.50.png" height="250px"/>
+
+#### infos
+
+Just added [evnaz/ENSwiftSideMenu](https://github.com/evnaz/ENSwiftSideMenu) to the master, for demonstration.
+[Master -> SideBar Example](https://github.com/weareopensource/Sample-Swift_GetStarted/tree/SideBar) (iphone - ipad)
+
+# Questions ? 
 
 [pierrebrisorgueil@me.com][email]
 [email]: mailto:pierrebrisorgueil@me.com
