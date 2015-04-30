@@ -4,7 +4,7 @@
 
 #### Introduction  
 
-IOS application sample, just to learn swift, by  [this good article](http://jamesonquave.com/blog/developing-ios-apps-using-swift-tutorial/). (and a little more ;), pull to refresh, custom ... )
+IOS application sample, just to learn swift.
 
 # [Master](https://github.com/weareopensource/Sample-Swift_GetStarted) (iphone - ipad)
 
@@ -12,6 +12,10 @@ IOS application sample, just to learn swift, by  [this good article](http://jame
 <img src="https://raw.githubusercontent.com/weareopensource/Sample-Swift_GetStarted/master/Screenshots/iOS%20Simulator%20Screen%20Shot%2028%20avr.%202015%2019.41.51.png" width="300px"/>
 <img src="https://github.com/weareopensource/Sample-Swift_GetStarted/blob/master/Screenshots/iOS%20Simulator%20Screen%20Shot%2028%20avr.%202015%2019.42.10.png" height="300px"/>
 
+#### infos
+
+ Learn Swift by  [this good article](http://jamesonquave.com/blog/developing-ios-apps-using-swift-tutorial/). (and a little more ;), pull to refresh, custom ... )
+ 
 #### Tuto 
 
 * [Step 1](http://jamesonquave.com/blog/developing-ios-apps-using-swift-tutorial/) = [Release v0.1](https://github.com/weareopensource/Sample-Swift_GetStarted/releases/tag/v0.1)
@@ -32,14 +36,23 @@ Bonus by [weareopensource.me](http://weareopensource.me)
 # [Master -> SideBar Example](https://github.com/weareopensource/Sample-Swift_GetStarted/tree/SideBar) (iphone - ipad)
 
 <img src="https://raw.githubusercontent.com/weareopensource/Sample-Swift_GetStarted/SideBar/Screenshots/iOS%20Simulator%20Screen%20Shot%2029%20avr.%202015%2009.03.16.png" width="250px"/>
+<img src="https://github.com/weareopensource/Sample-Swift_GetStarted/blob/SideBar/Screenshots/iOS%20Simulator%20Screen%20Shot%2030%20avr.%202015%2012.22.48.png?raw=true" width="250px"/>
 <img src="https://raw.githubusercontent.com/weareopensource/Sample-Swift_GetStarted/SideBar/Screenshots/iOS%20Simulator%20Screen%20Shot%2029%20avr.%202015%2009.03.20.png" width="250px"/>
 <img src="https://raw.githubusercontent.com/weareopensource/Sample-Swift_GetStarted/SideBar/Screenshots/iOS%20Simulator%20Screen%20Shot%2029%20avr.%202015%2009.03.28.png" width="250px"/>
+<img src="https://github.com/weareopensource/Sample-Swift_GetStarted/blob/SideBar/Screenshots/iOS%20Simulator%20Screen%20Shot%2030%20avr.%202015%2012.24.08.png?raw=true" width="250px"/>
 <img src="https://raw.githubusercontent.com/weareopensource/Sample-Swift_GetStarted/SideBar/Screenshots/iOS%20Simulator%20Screen%20Shot%2029%20avr.%202015%2009.03.50.png" height="250px"/>
 
 #### infos
 
 Just added [evnaz/ENSwiftSideMenu](https://github.com/evnaz/ENSwiftSideMenu) to the master, for demonstration.
 [Master -> SideBar Example](https://github.com/weareopensource/Sample-Swift_GetStarted/tree/SideBar) (iphone - ipad)
+
+#### Tuto 
+
+Bonus by [weareopensource.me](http://weareopensource.me)
+
+* [Release v1.1 : Add SideBar and animations](https://github.com/weareopensource/Sample-Swift_GetStarted/releases/tag/v1.1)
+
 
 # Questions ? 
 
