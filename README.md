@@ -35,12 +35,12 @@ Bonus by [weareopensource.me](http://weareopensource.me)
 
 # [Master -> SideBar Example](https://github.com/weareopensource/Sample-Swift_GetStarted/tree/SideBar) (iphone - ipad)
 
-<img src="https://raw.githubusercontent.com/weareopensource/Sample-Swift_GetStarted/SideBar/Screenshots/iOS%20Simulator%20Screen%20Shot%2029%20avr.%202015%2009.03.16.png" width="200px"/>
-<img src="https://github.com/weareopensource/Sample-Swift_GetStarted/blob/SideBar/Screenshots/iOS%20Simulator%20Screen%20Shot%2030%20avr.%202015%2012.22.48.png?raw=true" width="200px"/>
-<img src="https://raw.githubusercontent.com/weareopensource/Sample-Swift_GetStarted/SideBar/Screenshots/iOS%20Simulator%20Screen%20Shot%2029%20avr.%202015%2009.03.20.png" width="200px"/>
-<img src="https://raw.githubusercontent.com/weareopensource/Sample-Swift_GetStarted/SideBar/Screenshots/iOS%20Simulator%20Screen%20Shot%2029%20avr.%202015%2009.03.28.png" width="200px"/>
-<img src="https://github.com/weareopensource/Sample-Swift_GetStarted/blob/SideBar/Screenshots/iOS%20Simulator%20Screen%20Shot%2030%20avr.%202015%2012.24.08.png?raw=true" height="200px"/>
-<img src="https://raw.githubusercontent.com/weareopensource/Sample-Swift_GetStarted/SideBar/Screenshots/iOS%20Simulator%20Screen%20Shot%2029%20avr.%202015%2009.03.50.png" height="200px"/>
+<img src="https://raw.githubusercontent.com/weareopensource/Sample-Swift_GetStarted/SideBar/Screenshots/iOS%20Simulator%20Screen%20Shot%2029%20avr.%202015%2009.03.16.png" width="250px"/>
+<img src="https://github.com/weareopensource/Sample-Swift_GetStarted/blob/SideBar/Screenshots/iOS%20Simulator%20Screen%20Shot%2030%20avr.%202015%2012.22.48.png?raw=true" width="250px"/>
+<img src="https://raw.githubusercontent.com/weareopensource/Sample-Swift_GetStarted/SideBar/Screenshots/iOS%20Simulator%20Screen%20Shot%2029%20avr.%202015%2009.03.20.png" width="250px"/>
+<img src="https://raw.githubusercontent.com/weareopensource/Sample-Swift_GetStarted/SideBar/Screenshots/iOS%20Simulator%20Screen%20Shot%2029%20avr.%202015%2009.03.28.png" width="250px"/>
+<img src="https://github.com/weareopensource/Sample-Swift_GetStarted/blob/SideBar/Screenshots/iOS%20Simulator%20Screen%20Shot%2030%20avr.%202015%2012.24.08.png?raw=true" width="250px"/>
+<img src="https://raw.githubusercontent.com/weareopensource/Sample-Swift_GetStarted/SideBar/Screenshots/iOS%20Simulator%20Screen%20Shot%2029%20avr.%202015%2009.03.50.png" height="250px"/>
 
 #### infos
 
