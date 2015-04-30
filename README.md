@@ -47,9 +47,7 @@ Bonus by [weareopensource.me](http://weareopensource.me)
 Just added [evnaz/ENSwiftSideMenu](https://github.com/evnaz/ENSwiftSideMenu) to the master, for demonstration.
 [Master -> SideBar Example](https://github.com/weareopensource/Sample-iOS_Swift_GetStarted/tree/SideBar) (iphone - ipad)
 
-#### Tuto 
-
-Bonus by [weareopensource.me](http://weareopensource.me)
+#### Releases 
 
 * [Release v1.1 : Add SideBar and animations](https://github.com/weareopensource/Sample-iOS_Swift_GetStarted/releases/tag/v1.1)
 
