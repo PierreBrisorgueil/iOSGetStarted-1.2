@@ -105,21 +105,44 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="waos" translatesAutoresizingMaskIntoConstraints="NO" id="Gxs-8G-BTP">
-                                <rect key="frame" x="180" y="180" width="240" height="240"/>
+                                <rect key="frame" x="225" y="164" width="150" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="240" id="8TG-5n-cF0"/>
-                                    <constraint firstAttribute="width" constant="240" id="HmX-Uf-4Rw"/>
+                                    <constraint firstAttribute="height" constant="150" id="8TG-5n-cF0"/>
+                                    <constraint firstAttribute="width" constant="150" id="HmX-Uf-4Rw"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WeAreOpenSource.me" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sws-SL-dzp">
+                                <rect key="frame" x="150" y="344" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="IHE-2m-XsS"/>
+                                    <constraint firstAttribute="width" constant="300" id="u2G-BU-6gq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Building Open Source concepts #LetsGetTogether" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T5u-Cr-EAT">
+                                <rect key="frame" x="150" y="404" width="300" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="vDN-Fa-t8j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Jxs-nu-rR1" secondAttribute="trailing" id="3gW-gr-YWw"/>
                             <constraint firstItem="bws-h6-RmP" firstAttribute="top" secondItem="Jxs-nu-rR1" secondAttribute="bottom" id="FVU-F5-5tE"/>
-                            <constraint firstAttribute="centerY" secondItem="Gxs-8G-BTP" secondAttribute="centerY" id="NWh-nP-hBo"/>
+                            <constraint firstItem="T5u-Cr-EAT" firstAttribute="centerX" secondItem="sws-SL-dzp" secondAttribute="centerX" id="HIK-L1-IBA"/>
+                            <constraint firstItem="Gxs-8G-BTP" firstAttribute="top" secondItem="Hfb-KW-hwu" secondAttribute="bottom" constant="100" id="JyL-4u-NIa"/>
+                            <constraint firstItem="sws-SL-dzp" firstAttribute="top" secondItem="Gxs-8G-BTP" secondAttribute="bottom" constant="30" id="Kud-XL-Ihk"/>
                             <constraint firstItem="Jxs-nu-rR1" firstAttribute="leading" secondItem="VTM-4d-Ldr" secondAttribute="leading" id="SK0-cg-zlh"/>
                             <constraint firstAttribute="centerX" secondItem="Gxs-8G-BTP" secondAttribute="centerX" id="ULx-fo-XeG"/>
                             <constraint firstItem="Jxs-nu-rR1" firstAttribute="top" secondItem="VTM-4d-Ldr" secondAttribute="top" id="XiS-Qg-Ezz"/>
+                            <constraint firstItem="sws-SL-dzp" firstAttribute="centerX" secondItem="Gxs-8G-BTP" secondAttribute="centerX" id="xoV-jC-G0H"/>
+                            <constraint firstItem="T5u-Cr-EAT" firstAttribute="top" secondItem="sws-SL-dzp" secondAttribute="bottom" constant="10" id="yBg-cb-qRw"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="WeAreOpenSource.me" id="8hn-CL-2uA">
@@ -132,6 +155,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="imgWaos" destination="Gxs-8G-BTP" id="qmL-0v-XwS"/>
+                        <outlet property="labelWaos" destination="sws-SL-dzp" id="BKT-14-uqI"/>
+                        <outlet property="sublabelWaos" destination="T5u-Cr-EAT" id="Zc1-x9-rEP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oT8-oA-LjX" userLabel="First Responder" sceneMemberID="firstResponder"/>

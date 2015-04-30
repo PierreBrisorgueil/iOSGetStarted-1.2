@@ -66,6 +66,52 @@ class DetailsViewController: UIViewController, APIControllerProtocol {
         if self.album != nil {
             api.lookupAlbum(self.album!.collectionId)
         }
+        
+        
+        // animation
+        // ---------------------
+        // img
+        albumCover.alpha = 0
+        UIView.animateWithDuration(0.3, delay: 0.5,
+            options: nil, animations: {
+                self.albumCover.alpha = 1
+            }, completion: nil)
+        
+        // slide & alpha labels
+        titleLabel.alpha = 0.3
+        titleLabel.center.x += view.bounds.width
+        UIView.animateWithDuration(0.3, delay: 0.3,
+            options: nil, animations: {
+                self.titleLabel.center.x -= self.view.bounds.width
+            }, completion: { _ in
+                UIView.animateWithDuration(0.3, delay: 0,
+                    options: nil, animations: {
+                        self.titleLabel.alpha = 1
+                    }, completion: nil)
+        })
+        artistLabel.alpha = 0.3
+        artistLabel.center.x += view.bounds.width
+        UIView.animateWithDuration(0.3, delay: 0.4,
+            options: nil, animations: {
+                self.artistLabel.center.x -= self.view.bounds.width
+            }, completion: { _ in
+                UIView.animateWithDuration(0.3, delay: 0,
+                    options: nil, animations: {
+                        self.artistLabel.alpha = 1
+                    }, completion: nil)
+        })
+        genreLabel.alpha = 0.3
+        genreLabel.center.x += view.bounds.width
+        UIView.animateWithDuration(0.3, delay: 0.4,
+            options: nil, animations: {
+                self.genreLabel.center.x -= self.view.bounds.width
+            }, completion: { _ in
+                UIView.animateWithDuration(0.3, delay: 0,
+                    options: nil, animations: {
+                        self.genreLabel.alpha = 1
+                    }, completion: nil)
+        })
+        // ---------------------
     }
     
     // TableView

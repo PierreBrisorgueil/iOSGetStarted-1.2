@@ -96,6 +96,14 @@ class SearchResultsViewController: UIViewController, UITableViewDataSource, UITa
                     dispatch_async(dispatch_get_main_queue(), {
                         if let cellToUpdate = tableView.cellForRowAtIndexPath(indexPath) {
                             cellToUpdate.imageView?.image = image
+                            // animation
+                            // ---------------------
+                            cellToUpdate.imageView?.alpha = 0
+                            UIView.animateWithDuration(0.3, delay: 0.2,
+                                options: nil, animations: {
+                                    cellToUpdate.imageView?.alpha = 1
+                                }, completion: nil)
+                            // ---------------------
                         }
                     })
                 }
@@ -118,6 +126,33 @@ class SearchResultsViewController: UIViewController, UITableViewDataSource, UITa
         cell.selectedBackgroundView = customColorView
         // ---------------------
 
+        // animation
+        // ---------------------
+        cell.textLabel?.alpha = 0.3
+        cell.textLabel?.center.x += view.bounds.width
+        UIView.animateWithDuration(0.3, delay: 0.1,
+            options: nil, animations: {
+                cell.textLabel?.center.x -= self.view.bounds.width
+            }, completion: { _ in
+                UIView.animateWithDuration(0.3, delay: 0,
+                    options: nil, animations: {
+                        cell.textLabel?.alpha = 1
+                    }, completion: nil)
+        })
+
+        cell.detailTextLabel?.alpha = 0.3
+        cell.detailTextLabel?.center.x += view.bounds.width
+        UIView.animateWithDuration(0.3, delay: 0.3,
+            options: nil, animations: {
+                cell.detailTextLabel?.center.x -= self.view.bounds.width
+            }, completion: { _ in
+                UIView.animateWithDuration(0.3, delay: 0,
+                    options: nil, animations: {
+                        cell.detailTextLabel?.alpha = 1
+                    }, completion: nil)
+        })
+        // ---------------------
+        
         return cell
     }
     
