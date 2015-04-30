@@ -66,6 +66,52 @@ class DetailsViewController: UIViewController, APIControllerProtocol {
         if self.album != nil {
             api.lookupAlbum(self.album!.collectionId)
         }
+        
+        
+        // animation
+        // ---------------------
+        // img
+        albumCover.alpha = 0
+        UIView.animateWithDuration(0.3, delay: 0.5,
+            options: nil, animations: {
+                self.albumCover.alpha = 1
+            }, completion: nil)
+        
+        // slide & alpha labels
+        titleLabel.alpha = 0.3
+        titleLabel.center.x += view.bounds.width
+        UIView.animateWithDuration(0.3, delay: 0.3,
+            options: nil, animations: {
+                self.titleLabel.center.x -= self.view.bounds.width
+            }, completion: { _ in
+                UIView.animateWithDuration(0.3, delay: 0,
+                    options: nil, animations: {
+                        self.titleLabel.alpha = 1
+                    }, completion: nil)
+        })
+        artistLabel.alpha = 0.3
+        artistLabel.center.x += view.bounds.width
+        UIView.animateWithDuration(0.3, delay: 0.4,
+            options: nil, animations: {
+                self.artistLabel.center.x -= self.view.bounds.width
+            }, completion: { _ in
+                UIView.animateWithDuration(0.3, delay: 0,
+                    options: nil, animations: {
+                        self.artistLabel.alpha = 1
+                    }, completion: nil)
+        })
+        genreLabel.alpha = 0.3
+        genreLabel.center.x += view.bounds.width
+        UIView.animateWithDuration(0.3, delay: 0.4,
+            options: nil, animations: {
+                self.genreLabel.center.x -= self.view.bounds.width
+            }, completion: { _ in
+                UIView.animateWithDuration(0.3, delay: 0,
+                    options: nil, animations: {
+                        self.genreLabel.alpha = 1
+                    }, completion: nil)
+        })
+        // ---------------------
     }
     
     // TableView
@@ -86,7 +132,7 @@ class DetailsViewController: UIViewController, APIControllerProtocol {
         cell.titleLabel?.textColor = UIColor.whiteColor().colorWithAlphaComponent(0.7)
         cell.playIcon?.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0)
         cell.playIcon?.textColor = UIColor.whiteColor()
-        cell.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.25)
+        cell.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.4)
         
         let customColorView = UIView()
         customColorView.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.1)

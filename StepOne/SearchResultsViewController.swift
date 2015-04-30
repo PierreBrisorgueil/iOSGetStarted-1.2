@@ -10,7 +10,7 @@
 
 import UIKit
 
-class SearchResultsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, APIControllerProtocol  {
+class SearchResultsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, APIControllerProtocol, ENSideMenuDelegate {
 
     /*************************************************/
     // Main
@@ -96,6 +96,14 @@ class SearchResultsViewController: UIViewController, UITableViewDataSource, UITa
                     dispatch_async(dispatch_get_main_queue(), {
                         if let cellToUpdate = tableView.cellForRowAtIndexPath(indexPath) {
                             cellToUpdate.imageView?.image = image
+                            // animation
+                            // ---------------------
+                            cellToUpdate.imageView?.alpha = 0
+                            UIView.animateWithDuration(0.3, delay: 0.2,
+                                options: nil, animations: {
+                                    cellToUpdate.imageView?.alpha = 1
+                                }, completion: nil)
+                            // ---------------------
                         }
                     })
                 }
@@ -111,13 +119,40 @@ class SearchResultsViewController: UIViewController, UITableViewDataSource, UITa
         cell.detailTextLabel?.textColor = UIColor.whiteColor().colorWithAlphaComponent(0.7)
         cell.textLabel?.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0)
         cell.textLabel?.textColor = UIColor.whiteColor()
-        cell.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.25)
+        cell.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.5)
 
         let customColorView = UIView()
         customColorView.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.1)
         cell.selectedBackgroundView = customColorView
         // ---------------------
 
+        // animation
+        // ---------------------
+        cell.textLabel?.alpha = 0.3
+        cell.textLabel?.center.x += view.bounds.width
+        UIView.animateWithDuration(0.3, delay: 0.1,
+            options: nil, animations: {
+                cell.textLabel?.center.x -= self.view.bounds.width
+            }, completion: { _ in
+                UIView.animateWithDuration(0.3, delay: 0,
+                    options: nil, animations: {
+                        cell.textLabel?.alpha = 1
+                    }, completion: nil)
+        })
+
+        cell.detailTextLabel?.alpha = 0.3
+        cell.detailTextLabel?.center.x += view.bounds.width
+        UIView.animateWithDuration(0.3, delay: 0.3,
+            options: nil, animations: {
+                cell.detailTextLabel?.center.x -= self.view.bounds.width
+            }, completion: { _ in
+                UIView.animateWithDuration(0.3, delay: 0,
+                    options: nil, animations: {
+                        cell.detailTextLabel?.alpha = 1
+                    }, completion: nil)
+        })
+        // ---------------------
+        
         return cell
     }
     
@@ -141,6 +176,15 @@ class SearchResultsViewController: UIViewController, UITableViewDataSource, UITa
     /*************************************************/
     // Functions
     /*************************************************/
+    
+    // Segue
+    /*************************/
+    @IBAction func toogleSideMenu(sender: AnyObject) {
+        toggleSideMenuView()
+    }
+    
+    // Other
+    /*************************/
     func refresh(sender:AnyObject)
     {
         // get data
@@ -148,7 +192,7 @@ class SearchResultsViewController: UIViewController, UITableViewDataSource, UITa
         UIApplication.sharedApplication().networkActivityIndicatorVisible = true
         api.searchItunesFor("Beatles")
     }
-    
+
     func didReceiveAPIResults(results: NSArray) {
         dispatch_async(dispatch_get_main_queue(), {
             self.albums = Album.albumsWithJSON(results)
