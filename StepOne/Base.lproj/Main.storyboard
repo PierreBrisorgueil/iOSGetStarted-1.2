@@ -397,7 +397,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="home" width="1016" height="1016"/>
+        <image name="home" width="962" height="960"/>
         <image name="waos" width="652" height="614"/>
     </resources>
 </document>
