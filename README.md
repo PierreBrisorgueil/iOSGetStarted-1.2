@@ -51,6 +51,24 @@ Just added [evnaz/ENSwiftSideMenu](https://github.com/evnaz/ENSwiftSideMenu) to 
 
 * [Release v1.1 : Add SideBar and animations](https://github.com/weareopensource/Sample-iOS_Swift_GetStarted/releases/tag/v1.1)
 
+# [Master -> TabBar Example](https://github.com/weareopensource/Sample-iOS_Swift_GetStarted/tree/TabBar) (iphone - ipad)
+
+<img src="https://github.com/weareopensource/Sample-iOS_Swift_GetStarted/blob/TabBar/Screenshots/iOS%20Simulator%20Screen%20Shot%204%20mai%202015%2010.21.30.png" width="250px"/>
+<img src="https://github.com/weareopensource/Sample-iOS_Swift_GetStarted/blob/TabBar/Screenshots/iOS%20Simulator%20Screen%20Shot%204%20mai%202015%2010.21.38.png" width="250px"/>
+<img src="https://github.com/weareopensource/Sample-iOS_Swift_GetStarted/blob/TabBar/Screenshots/iOS%20Simulator%20Screen%20Shot%204%20mai%202015%2010.22.10.png" width="250px"/>
+<img src="https://github.com/weareopensource/Sample-iOS_Swift_GetStarted/blob/TabBar/Screenshots/iOS%20Simulator%20Screen%20Shot%204%20mai%202015%2010.23.53.png" width="250px"/>
+<img src="https://github.com/weareopensource/Sample-iOS_Swift_GetStarted/blob/TabBar/Screenshots/iOS%20Simulator%20Screen%20Shot%204%20mai%202015%2010.24.11.png" height="250px"/>
+
+#### infos
+
+Just added aTtabBar to the master, for demonstration.
+[Master -> SideBar Example](https://github.com/weareopensource/Sample-iOS_Swift_GetStarted/tree/TabBar) (iphone - ipad)
+
+#### Releases 
+
+* [Release v1.1 : Add tabBar and animations](https://github.com/weareopensource/Sample-iOS_Swift_GetStarted/releases/tag/v1.2)
+
+
 
 # Questions ? 
 
