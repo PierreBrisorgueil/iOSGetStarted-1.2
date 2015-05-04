@@ -53,11 +53,11 @@ Just added [evnaz/ENSwiftSideMenu](https://github.com/evnaz/ENSwiftSideMenu) to 
 
 # [Master -> TabBar Example](https://github.com/weareopensource/Sample-iOS_Swift_GetStarted/tree/TabBar) (iphone - ipad)
 
-<img src="https://github.com/weareopensource/Sample-iOS_Swift_GetStarted/blob/TabBar/Screenshots/iOS%20Simulator%20Screen%20Shot%204%20mai%202015%2010.21.30.png" width="250px"/>
-<img src="https://github.com/weareopensource/Sample-iOS_Swift_GetStarted/blob/TabBar/Screenshots/iOS%20Simulator%20Screen%20Shot%204%20mai%202015%2010.21.38.png" width="250px"/>
-<img src="https://github.com/weareopensource/Sample-iOS_Swift_GetStarted/blob/TabBar/Screenshots/iOS%20Simulator%20Screen%20Shot%204%20mai%202015%2010.22.10.png" width="250px"/>
-<img src="https://github.com/weareopensource/Sample-iOS_Swift_GetStarted/blob/TabBar/Screenshots/iOS%20Simulator%20Screen%20Shot%204%20mai%202015%2010.23.53.png" width="250px"/>
-<img src="https://github.com/weareopensource/Sample-iOS_Swift_GetStarted/blob/TabBar/Screenshots/iOS%20Simulator%20Screen%20Shot%204%20mai%202015%2010.24.11.png" height="250px"/>
+<img src="https://raw.githubusercontent.com/weareopensource/Sample-iOS_Swift_GetStarted/TabBar/Screenshots/iOS%20Simulator%20Screen%20Shot%204%20mai%202015%2010.21.30.png" width="250px"/>
+<img src="https://raw.githubusercontent.com/weareopensource/Sample-iOS_Swift_GetStarted/TabBar/Screenshots/iOS%20Simulator%20Screen%20Shot%204%20mai%202015%2010.21.38.png" width="250px"/>
+<img src="https://raw.githubusercontent.com/weareopensource/Sample-iOS_Swift_GetStarted/TabBar/Screenshots/iOS%20Simulator%20Screen%20Shot%204%20mai%202015%2010.22.10.png" width="250px"/>
+<img src="https://raw.githubusercontent.com/weareopensource/Sample-iOS_Swift_GetStarted/TabBar/Screenshots/iOS%20Simulator%20Screen%20Shot%204%20mai%202015%2010.23.53.png" width="250px"/>
+<img src="https://raw.githubusercontent.com/weareopensource/Sample-iOS_Swift_GetStarted/TabBar/Screenshots/iOS%20Simulator%20Screen%20Shot%204%20mai%202015%2010.24.11.png" height="250px"/>
 
 #### infos
 
