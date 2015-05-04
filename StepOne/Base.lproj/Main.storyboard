@@ -159,14 +159,7 @@
                             <constraint firstItem="T5u-Cr-EAT" firstAttribute="top" secondItem="sws-SL-dzp" secondAttribute="bottom" constant="10" id="yBg-cb-qRw"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="WeAreOpenSource.me" id="8hn-CL-2uA">
-                        <barButtonItem key="leftBarButtonItem" systemItem="search" id="7CS-QK-cq9">
-                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <action selector="toogleSideMenu:" destination="GDl-wH-c9b" id="fjz-2Y-PDz"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="WeAreOpenSource.me" id="8hn-CL-2uA"/>
                     <connections>
                         <outlet property="imgWaos" destination="Gxs-8G-BTP" id="qmL-0v-XwS"/>
                         <outlet property="labelWaos" destination="sws-SL-dzp" id="BKT-14-uqI"/>
