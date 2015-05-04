@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WeAreOpenSource: UIViewController, ENSideMenuDelegate {
+class WeAreOpenSource: UIViewController {
     
     /*************************************************/
     // Main
@@ -69,17 +69,6 @@ class WeAreOpenSource: UIViewController, ENSideMenuDelegate {
         })
         // ---------------------
         
-    }
-    
-    
-    /*************************************************/
-    // Functions
-    /*************************************************/
-    
-    // Segue
-    /*************************/
-    @IBAction func toogleSideMenu(sender: AnyObject) {
-        toggleSideMenuView()
     }
     
 }

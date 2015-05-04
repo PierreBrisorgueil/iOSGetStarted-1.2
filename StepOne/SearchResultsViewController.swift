@@ -10,7 +10,7 @@
 
 import UIKit
 
-class SearchResultsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, APIControllerProtocol, ENSideMenuDelegate {
+class SearchResultsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, APIControllerProtocol {
 
     /*************************************************/
     // Main
@@ -115,11 +115,11 @@ class SearchResultsViewController: UIViewController, UITableViewDataSource, UITa
         
         // custom
         // ---------------------
-        cell.detailTextLabel?.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0)
-        cell.detailTextLabel?.textColor = UIColor.whiteColor().colorWithAlphaComponent(0.7)
-        cell.textLabel?.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0)
-        cell.textLabel?.textColor = UIColor.whiteColor()
-        cell.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.5)
+        cell.detailTextLabel?.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0)
+        cell.detailTextLabel?.textColor = UIColor.blackColor().colorWithAlphaComponent(0.6)
+        cell.textLabel?.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0)
+        cell.textLabel?.textColor = UIColor.blackColor().colorWithAlphaComponent(0.8)
+        cell.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.4)
 
         let customColorView = UIView()
         customColorView.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.1)
@@ -176,12 +176,6 @@ class SearchResultsViewController: UIViewController, UITableViewDataSource, UITa
     /*************************************************/
     // Functions
     /*************************************************/
-    
-    // Segue
-    /*************************/
-    @IBAction func toogleSideMenu(sender: AnyObject) {
-        toggleSideMenuView()
-    }
     
     // Other
     /*************************/
