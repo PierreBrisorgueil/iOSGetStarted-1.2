@@ -1,7 +1,7 @@
 # WeAreOpenSource.me
 
 ## Sample-iOS_Swift_1.2_GetStarted
-## [/!\ Same for SWIFT 2 IOS 9 /!\](https://github.com/weareopensource/Sample-iOS_Swift_2_GetStarted)
+## [Same for SWIFT 2 IOS 9](https://github.com/weareopensource/Sample-iOS_Swift_2_GetStarted)
 
 #### Introduction  
 
